@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Bharti School</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-content">
+                <h1>Welcome to Vishal Bharti Senior Secondary School</h1>
+                <p>Empowering students with quality education and life skills.</p>
+                <a href="admission.html" class="cta">Join Us Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>Discover Vishal Bharti Senior Secondary School's Unique Approach to Learning</h2>
+        <p>At Vishal Bharti Senior Secondary School, we believe that every student has the potential to excel academically and personally. That’s why we’ve developed a unique approach to learning that focuses on each student’s individual needs and learning style. Our teachers are dedicated to fostering a supportive and inclusive learning environment, where students are encouraged to explore new ideas and take risks. We offer a wide range of academic and extracurricular programmes that enable our students to build a strong foundation for success.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="images/img6.jpg" alt="Infrastructure">
+            <h3>Modern Infrastructure</h3>
+            <p>State-of-the-art facilities for holistic development.</p>
+        </div>
+        <div class="feature">
+            <img src="images/img2.jpg" alt="Academics">
+            <h3>Academic Excellence</h3>
+            <p>Innovative teaching methods for conceptual learning.</p>
+        </div>
+        <div class="feature">
+            <img src="images/img3.jpg" alt="Activities">
+            <h3>Co-curricular Activities</h3>
+            <p>Encouraging creativity and teamwork beyond the classroom.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Vishal Bharti Senior Secondary School | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

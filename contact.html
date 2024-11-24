@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vishal Bharti School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Vishal Bharti School</div>
+        <ul class="nav-links">
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like more information, please feel free to get in touch with us!</p>
+        
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vishal Bharti School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

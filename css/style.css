@@ -1,0 +1,457 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 70px; 
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header .nav-links li {
+    position: relative;
+}
+
+header .nav-links a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .nav-links a:hover {
+    background-color: #e74c3c;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+header .nav-links .active {
+    background-color: #e74c3c;
+    color: #f9f9f9;
+}
+
+/* Hamburger Menu for Mobile */
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+header .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Academics Section */
+.academics {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.academics h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.academics h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #333;
+}
+
+.academics ul {
+    list-style: none;
+    font-size: 1.2em;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.academics li {
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Activities Section */
+#activities {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#activities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#activities p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.activity-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.activity-gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.activity-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Admission Section */
+.admission {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admission h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admission h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #333;
+}
+
+.admission ol {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.admission ol li {
+    margin-bottom: 15px;
+}
+
+.admission .cta {
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.admission .cta:hover {
+    background-color: #c0392b;
+}
+
+/* Infrastructure Section */
+.infrastructure {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.infrastructure h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.infrastructure p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Image Gallery for Infrastructure */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual Image Item */
+.image-item {
+    width: 100%;
+    max-width: 200px; 
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        display: none; /* This will hide the nav links by default on smaller screens */
+    }
+
+    .nav-links.nav-active {
+        display: flex; /* This will show the nav links when the burger is clicked */
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .burger div {
+        background-color: white;
+        height: 3px;
+        width: 25px;
+        margin: 4px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    header .nav-links {
+        display: none;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+
+    header .hamburger.active + .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .nav-links a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+    .academics h1,
+    .about h1,
+    .admission h1,
+    .infrastructure h1 {
+        font-size: 2em;
+    }
+
+    .academics h2,
+    .about h2,
+    .admission h2,
+    .infrastructure h2 {
+        font-size: 1.5em;
+    }
+
+    .about p,
+    .admission ol,
+    .infrastructure p {
+        font-size: 1em;
+    }
+}
